@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 25% 96%;
+    --foreground: 170 35% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 170 35% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 170 35% 22%;
+
+    --primary: 246 27% 69%; /* #9b8ec4 lavender purple */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 54% 54%; /* #c9a84c warm gold */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 40 15% 90%;
+    --muted-foreground: 175 10% 38%;
+
+    --accent: 246 27% 69%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 12% 85%;
+    --input: 40 12% 85%;
+    --ring: 246 27% 69%;
+
+    --radius: 0.85rem;
+
+    /* Brand Colors */
+    --brand-gold: #c9a84c;
+    --brand-gold-hover: #b8973d;
+    --brand-lavender: #9b8ec4;
+    --brand-lavender-light: #b8aad9;
+    --brand-dark-forest: #2d4a44;
+    --brand-warm-bg: #f4f1ea;
+  }
+
+  .dark {
+    --background: 170 35% 12%;
+    --foreground: 40 15% 92%;
+
+    --card: 175 20% 16%;
+    --card-foreground: 40 15% 92%;
+
+    --popover: 175 20% 16%;
+    --popover-foreground: 40 15% 92%;
+
+    --primary: 246 27% 69%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 54% 54%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 175 15% 24%;
+    --muted-foreground: 40 10% 62%;
+
+    --accent: 175 20% 18%;
+    --accent-foreground: 40 15% 92%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 175 20% 20%;
+    --input: 175 20% 20%;
+    --ring: 246 27% 69%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-[#9b8ec4] selection:text-white;
+  }
+}
+
+/* Custom Utilities for SalonWell */
+.bg-gold-accent {
+  background-color: #c9a84c;
+}
+
+.text-gold-accent {
+  color: #c9a84c;
+}
+
+.bg-lavender-accent {
+  background-color: #9b8ec4;
+}
+
+.text-lavender-accent {
+  color: #9b8ec4;
+}
+
+.text-lavender-light {
+  color: #b8aad9;
+}
+
+.bg-lavender-hover:hover {
+  background-color: #8a7db5;
+}
+
+.bg-gold-hover:hover {
+  background-color: #b8973d;
+}
+
+.bg-[#f4f1ea] {
+  background-color: #f4f1ea;
+}
+
+.bg-forest-dark {
+  background-color: #2d4a44;
+}
+
+.text-forest-dark {
+  color: #2d4a44;
+}
